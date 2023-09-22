@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>TripTour</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="./images/logo.png" /> <!-- referente ícone de pagina -->
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <!--Links fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--Link Icones-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <!-- Começo do Header-->
+            <a href="#" class="logo">
+                Trip<span>Tour</span>
+            </a>
+            <ul class="links">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre nós</a></li>
+                <li><a href="pacotes.html">Pacotes</a></li>
+                <li><a href="contato.html">Contate-nos</a></li>
+            </ul>
+            <ul class="right">
+                <li><a href="index.html"><img src="images/brasil.png" alt="pt-br"></a></li>
+                <li><a href="english/index.html"><img src="images/eua.png" alt="eng"></a></li>
+            </ul>
+        </header>
+
+        <div class="content-slides">
+            <section class="home">
+                <div class="home-text">
+                    <h5>Vamos</h5>
+                    <h1>Planejar sua <br> próxima viagem</h1>
+                    <div class="line"></div>
+                    <p>Embarque em uma viagem de aventura, conheça destinos
+                        exóticos e culturas fascinantes, e crie memórias <br>
+                        inesquecíveis com a ajuda da TripTour.</p>
+                </div>
+            </section>
+
+            <div class="slides">
+                <input type="radio" name="slide" id="slide1" checked>
+                <!--o name "slide" é o mesmo para todos para n conseguir marcar mais de um slide-->
+                <input type="radio" name="slide" id="slide2">
+                <input type="radio" name="slide" id="slide3">
+                <input type="radio" name="slide" id="slide4">
+                <input type="radio" name="slide" id="slide5">
+                <input type="radio" name="slide" id="slide6">
+
+                <div class="slide s1">
+                    <img class="slide" src="./images/nova_iorque.jpg" alt="Nova Iorque, Estados Unidos">
+                </div>
+                <div class="slide">
+                    <img class="slide" src="./images/italy.jpg" alt="Itália">
+                </div>
+                <div class="slide">
+                    <img class="slide" src="./images/muralha_china.jpg" alt="Muralha da China, China">
+                </div>
+                <div class="slide">
+                    <img class="slide" src="./images/nova_zelandia.jpg" alt="A Estrada para o Paraíso, Nova Zelândia">
+                </div>
+                <div class="slide">
+                    <img class="slide" src="./images/sul_africa.jpg" alt="África do Sul">
+                </div>
+                <div class="slide">
+                    <img class="slide" src="./images/antartida.jpg" alt="Antártida">
+                </div>
+            </div>
+
+            <div class="navigation">
+                <label class="bar" for="slide1">América</label>
+                <label class="bar" for="slide2">Europa</label>
+                <label class="bar" for="slide3">Ásia</label>
+                <label class="bar" for="slide4">Oceania</label>
+                <label class="bar" for="slide5">África</label>
+                <label class="bar" for="slide6">Antártida</label>
+            </div>
+
+        </div>
+
+
+        <section class="hoteis">
+            <div class="row">
+                <div class="col content-col">
+                    <h2>CONFORTO & BELEZA</h2>
+                    <div class="line"></div>
+                    <p>A TripTour, além de proporcionar pacotes extraordinários, te
+                        auxilia a encontrar a hospedagem perfeita com os melhores preços.
+                        confira em nossos pacotes as opções de hospedagens e venha criar
+                        conosco as férias ideais para você.
+                    </p>
+                    <a href="pacotes.html" class="btn">Nossos Pacotes</a>
+                </div>
+                <div class="col image-col">
+                    <div class="imagem-galeria">
+                        <img src="./images/hotel-cafe.jpg" alt="">
+                        <img src="./images/hotel-exterior.jpg" alt="">
+                        <img src="./images/hotel-piscina.jpg" alt="">
+                        <img src="./images/hotel-room.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="passeios-populares">
+            <div class="cards-text">
+                <h2>Passeios Populares</h2>
+            </div>
+
+            <div class="content-body-cards">
+                <div class="content-cards">
+                    <div class="card">
+                        <img src="./images/passeio_balao.jpg" alt="chale">
+                        <div class="descricao">
+                            <h1>Voos de Balão</h1>
+                            <p>Tenha uma experiência única e admire a paisagem em uma perspectiva diferente.</p>
+                            <a href="pacotes.html" class="btn">Confira</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./images/chale_montanhas.jpg" alt="chale">
+                        <div class="descricao">
+                            <h1>Férias nas Montanhas</h1>
+                            <p>Hospeda-se em um chalé nas montanhas e desfrute da paz e beleza natural.</p>
+                            <a href="pacotes.html" class="btn">Confira</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./images/beach.jpg" alt="chale">
+                        <div class="descricao">
+                            <h1>Férias na Praia</h1>
+                            <p>As melhores praias e ilhas para você passar as férias da melhor maneira.</p>
+                            <a href="pacotes.html" class="btn">Confira</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./images/cruzeiro.jpg" alt="chale">
+                        <div class="descricao">
+                            <h1>Cruzeiros</h1>
+                            <p>Embarque em uma aventura pelo mar e visite ilhas e arquipélagos.</p>
+                            <a href="pacotes.html" class="btn">Confira</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        
+        <footer>
+            <div class="footer-box">
+                <h3>Agência</h3>
+                <a href="sobre.html">Sobre Nós</a>
+                <a href="#">Nossos Serviços</a>
+                <a href="#">Política de Privacidade</a>
+                <a href="#">Termos e Condições</a>
+            </div>
+
+            <div class="footer-box">
+                <h3>Ajuda</h3>
+                <a href="#">Perguntas Frequentes</a>
+                <a href="contato.html">Entre em Contato</a>
+                <a href="#">Opções de Pagamento</a>
+                <a href="#">Regras de remarcação, cancelamento e reembolso</a>
+            </div>
+
+            <div class="footer-box">
+                <h3>Loja Online</h3>
+                <a href="#">Minhas Viagens</a>
+                <a href="#">Passagens Aereas</a>
+                <a href="#">Aluguel de Carros</a>
+                <a href="#">Hospedagens</a>
+            </div>
+
+            <div class="footer-box">
+                <h3>Social</h3>
+                <div class="social">
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></i></a>
+                    <a href="#"><i class='bx bxl-facebook'></i></i></a>
+                </div>
+            </div>
+            <section class="footer">
+                <h5>Mariana Araripe 2023 - &copyTodos os direitos reservados
+                    <br>Trabalho Acadêmico - Sem fins lucrativos
+                </h5>
+            </section>
+            <div class="up">
+                <a href="index.html"><img src="./images/seta.png"></a>
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+</html>

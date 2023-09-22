@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Contate-nos</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="./images/logo.png" /> <!-- referente ícone de pagina -->
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <!--Links fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!--Link Icones-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!--Java-->
+    <script language="javascript" type="text/javascript">
+        function validar() {
+            var nome = form1.nome.value;
+            var email = form1.email.value;
+            var assunto = form1.assunto.value;
+            var mensagem = form1.mensagem.value;
+
+            if (nome == "") {
+                alert('Por favor, insira seu nome.');
+                form1.nome.focus();
+                return false;
+            }
+            if (email == "") {
+                alert('Por favor, insira seu email para podermos contatá-lo.');
+                form1.email.focus();
+                return false;
+            }
+            if (assunto == "") {
+                alert('Por favor, insira o assunto o qual deseja tratar.');
+                form1.assunto.focus();
+                return false;
+            }
+            if (mensagem == "") {
+                alert('Por favor, insira uma mensagem detalhando o assunto que deseja tratar.');
+                form1.mensagem.focus();
+                return false;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <!-- Começo do Header-->
+            <a href="#" class="logo">
+                Trip<span>Tour</span>
+            </a>
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre nós</a></li>
+                <li><a href="pacotes.html">Pacotes</a></li>
+                <li class="active"><a href="contato.html">Contate-nos</a></li>
+            </ul>
+            <ul class="right">
+                <li><a href="contato.html"><img src="images/brasil.png" alt="pt-br"></a></li>
+                <li><a href="english/contact.html"><img src="images/eua.png" alt="eng"></a></li>
+            </ul>
+        </header>
+
+        <section class="contato">
+            <div class="image-background">
+                <img src="./images/Background.png" alt="Montanhas">
+            </div>
+
+            <div class="contato-form">
+                <form name="form1" action="index.html" method="GET">
+                    Nome: <br><input type="text" name="nome" placeholder="Insira o seu nome"><br>
+                    E-mail: <br><input type="text" name="email" placeholder="E-mail de contato"><br>
+                    Assunto: <br><input type="text" name="assunto"
+                        placeholder="Assunto: dúvidas, melhorias a serem feitas, sugestões, etc"><br>
+                    Mensagem: <br><textarea name="mensagem" rows="8" placeholder="Insira uma mensagem"></textarea><br>
+                    <input class="enviar" type="submit" onclick="return validar()" value="Enviar">
+                    <input class="resetar" type="reset" name="limpa" value="Limpar">
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-box">
+            <h3>Agência</h3>
+            <a href="sobre.html">Sobre Nós</a>
+            <a href="#">Nossos Serviços</a>
+            <a href="#">Política de Privacidade</a>
+            <a href="#">Termos e Condições</a>
+        </div>
+
+        <div class="footer-box">
+            <h3>Ajuda</h3>
+            <a href="#">Perguntas Frequentes</a>
+            <a href="contato.html">Entre em Contato</a>
+            <a href="#">Opções de Pagamento</a>
+            <a href="#">Regras de remarcação, cancelamento e reembolso</a>
+        </div>
+
+        <div class="footer-box">
+            <h3>Loja Online</h3>
+            <a href="#">Minhas Viagens</a>
+            <a href="#">Passagens Aereas</a>
+            <a href="#">Aluguel de Carros</a>
+            <a href="#">Hospedagens</a>
+        </div>
+
+        <div class="footer-box">
+            <h3>Social</h3>
+            <div class="social">
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></i></a>
+                <a href="#"><i class='bx bxl-facebook'></i></i></a>
+            </div>
+        </div>
+        <section class="footer">
+            <h5>Mariana Araripe 2023 - &copyTodos os direitos reservados
+                <br>Trabalho Acadêmico - Sem fins lucrativos
+            </h5>
+        </section>
+        <div class="up">
+            <a href="index.html"><img src="./images/seta.png"></a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

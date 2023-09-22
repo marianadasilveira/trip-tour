@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Contact Us</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="../images/logo.png" /> <!-- referente ícone de pagina -->
+    <link rel="stylesheet" type="text/css" href="../estilo.css">
+    <!--Links fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!--Link Icones-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!--Java-->
+    <script language="javascript" type="text/javascript">
+        function validar() {
+            var nome = form1.nome.value;
+            var email = form1.email.value;
+            var assunto = form1.assunto.value;
+            var mensagem = form1.mensagem.value;
+
+            if (nome == "") {
+                alert('Please enter your name.');
+                form1.nome.focus();
+                return false;
+            }
+            if (email == "") {
+                alert('Please enter your email so we can contact you.');
+                form1.email.focus();
+                return false;
+            }
+            if (assunto == "") {
+                alert('Please enter the subject you wish to discuss.');
+                form1.assunto.focus();
+                return false;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <!-- Começo do Header-->
+            <a href="#" class="logo">
+                Trip<span>Tour</span>
+            </a>
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="packages.html">Packages</a></li>
+                <li class="active"><a href="contact.html">Contact</a></li>
+            </ul>
+            <ul class="right">
+                <li><a href="../contato.html"><img src="../images/brasil.png" alt="pt-br"></a></li>
+                <li><a href="../english/contact.html"><img src="../images/eua.png" alt="eng"></a></li>
+            </ul>
+        </header>
+
+        <section class="contato">
+            <div class="image-background">
+                <img src="../images/Background.png" alt="mountains landscape">
+            </div>
+
+            <div class="contato-form">
+                <form name="form1" action="index.html" method="GET">
+                    Name: <br><input type="text" name="nome" placeholder="Name"><br>
+                    E-mail: <br><input type="text" name="email" placeholder="Contact e-mail"><br>
+                    Subject: <br><input type="text" name="assunto"
+                        placeholder="Subject: questions, improvements to be made, suggestions, etc."><br>
+                    Message: <br><textarea name="mensagem" rows="8" placeholder="Enter a message"></textarea><br>
+                    <input class="enviar" type="submit" onclick="return validar()" value="Send">
+                    <input class="resetar" type="reset" name="limpa" value="Clear">
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-box">
+            <h3>Agency</h3>
+            <a href="about.html">About Us</a>
+            <a href="about.html">Our Services</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms and Conditions</a>
+        </div>
+
+        <div class="footer-box">
+            <h3>Help</h3>
+            <a href="#">FAQ</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="#">Payment Options</a>
+            <a href="#">Rescheduling, cancellation and refund rules</a>
+        </div>
+
+        <div class="footer-box">
+            <h3>Online Store</h3>
+            <a href="#">My Travels</a>
+            <a href="#">Airline Tickets</a>
+            <a href="#">Car Rent</a>
+            <a href="#">Accommodation</a>
+        </div>
+
+        <div class="footer-box">
+            <h3>Social</h3>
+            <div class="social">
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></i></a>
+                <a href="#"><i class='bx bxl-facebook'></i></i></a>
+            </div>
+        </div>
+        <section class="footer">
+            <h5>Mariana Araripe 2023 - &copyAll rights reserved</h5>
+        </section>
+         <div class="up">
+            <a href="contact.html"><img src="../images/seta.png"></a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
